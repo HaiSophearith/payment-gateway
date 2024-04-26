@@ -46,16 +46,16 @@
                   <div class="relative">
                     <label class="absolute left-3 top-1 text-[12px] text-gray-500" for="name">Expiry Date</label>
                     <input
-                      class="text-[20px] pt-8 border-2 border-gray-300 rounded-xl py-4 w-full focus:outline-yellow-500 focus:ring-yellow-500 focus:border-transparent"
+                      class="text-[20px] pt-8 border-2 border-gray-200 rounded-xl py-4 w-full focus:outline-yellow-500 focus:ring-yellow-500 focus:border-transparent"
                       type="text" id="name" value="05 / 28">
                   </div>
                   <!-- CVV -->
                   <div class="relative">
 
                     <label class="absolute left-3 top-1 text-[12px] text-gray-500" for="name">CVV</label>
-                    <input
+                    <input ng-maxlength=3
                       class="text-[20px] pt-8 border-2 border-gray-300 rounded-xl py-4 w-full focus:outline-yellow-500 focus:ring-yellow-500 focus:border-transparent appearance-none"
-                      type="number" id="name">
+                      type="number" id="name" value="171">
                   </div>
                   <!-- ZIP Code -->
                   <div class="relative">
@@ -89,7 +89,7 @@
                     type="text" id="name" value="sophearithhai@gmail.com">
                 </div>
                 <!-- button -->
-                <div class="flex justify-between mt-auto">
+                <div class="flex justify-between mt-auto pt-5">
                   <button class="bg-gray-300  text-black rounded-xl py-2 px-4 ">
                     Close
                   </button>
